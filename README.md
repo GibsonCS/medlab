@@ -142,13 +142,6 @@ TOMCAT_HOME/webapps/
 
 No navegador, acesse:
 
-
-http://localhost:8080/NOME_DO_WAR/
-
-
-Exemplo:
-
-
 http://localhost:8080/medlab/
 
 
