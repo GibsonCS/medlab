@@ -149,7 +149,7 @@ http://localhost:8080/NOME_DO_WAR/
 Exemplo:
 
 
-http://localhost:8080/medlab2/
+http://localhost:8080/medlab/
 
 
 O nome do contexto será o mesmo nome do arquivo `.war`.
