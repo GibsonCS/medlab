@@ -43,19 +43,28 @@ Cliente → Servlet → Service → DAO → Banco de Dados
 
 ```mermaid
 erDiagram
-    PACIENTE ||--o{ EXAME : possui
 
     PACIENTE {
-        int id
-        string nome
-        string cpf
-        date data_nascimento
+        BIGSERIAL id PK
+        VARCHAR nome
+        CHAR sexo
     }
 
     EXAME {
-        int id
-        string tipo
-        string descricao
-        date data_exame
-        int paciente_id
+        BIGSERIAL id PK
+        BIGINT paciente_id FK
+        VARCHAR num_acesso
+        VARCHAR visita
+        DATE data_exame
+        VARCHAR modalidade
+        VARCHAR tipo_exame
+        VARCHAR numero
+        VARCHAR estado
+        VARCHAR medico_solicitante
+        CHAR laudo
+        CHAR especial
+        CHAR urgente
+        CHAR restaurado
     }
+
+    PACIENTE ||--o{ EXAME : possui
